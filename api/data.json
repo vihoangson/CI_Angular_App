@@ -1,0 +1,9 @@
+﻿{
+name : "Vi Hoang Son",
+description: "I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.",
+birthday : "10/06/1986",
+email : "vihoangson@gmail.com",
+address:"HCM City",
+phone : "0121 885 1144",
+website : "www.vihoangson.com"
+}

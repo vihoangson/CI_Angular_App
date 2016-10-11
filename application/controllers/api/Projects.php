@@ -21,6 +21,11 @@ class Projects extends REST_Controller {
 		$this->response($this->project_model->get_all());
 	}
 
+	public function getdata_get()
+	{
+		$this->response(["id"=>"Không có gì quý hơn độc lập tự do"]);
+	}
+
 	public function edit_get($id = NULL)
 	{
 		if ( ! $id)
