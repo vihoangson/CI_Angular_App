@@ -1,4 +1,12 @@
 var app = angular.module('bookapp', {});
+app.config(function($routeProvider){
+  $routeProvider.
+  when("/",{controller:bookCtrSingle,templateUrl:BASE_URL+"/project/layout"})
+})
+
+app.controller("bookCtrSingle",["$scope",function($scope){
+  alert(123);
+}]);
 
 app.controller("bookCtr",["$scope",function($scope){
   $scope.test = "test string";
