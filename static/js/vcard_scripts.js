@@ -47,10 +47,20 @@ function newsCtrl($scope){
     };
 }
 
-function blogCtrl($scope){
-    $scope.data = {
-        id:1
-    };
+function blogCtrl($scope,Vcard){
+    
+    $scope.blogs = [
+        {
+            id:"Không có gì quý hơn độc lập tự do"
+        },
+        {
+            id:2
+        },
+        {
+            id:3
+        }
+    ];
+    $scope.content_ss = Vcard.getdata();
 }
 
 function contactCtrl($scope){
@@ -60,7 +70,7 @@ function contactCtrl($scope){
 }
 
 function resumeCtrl($scope,Vcard){
-    $scope.data = Vcard.getdata();
+    //$scope.data = Vcard.getdata();
 }
 
 
@@ -71,7 +81,7 @@ factory('Vcard', function($resource) {
         query: {method:'GET', params: {method:'index'}, isArray:true },
         save: {method:'POST', params: {method:'save'} },
         get: {method:'GET', params: {method:'edit'} },
-        getdata: {method:'GET', params: {method:'getdata'} },
+        getdata: {method:'GET', params: {method:'getdata'}, isArray:true},
         remove: {method:'DELETE', params: {method:'remove'} }
     });
     Vcard.prototype.update = function(cb) {

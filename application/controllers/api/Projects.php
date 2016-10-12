@@ -23,7 +23,12 @@ class Projects extends REST_Controller {
 
 	public function getdata_get()
 	{
-		$this->response(["id"=>"Không có gì quý hơn độc lập tự do"]);
+		$data = 
+		[
+			["id"=>1,"title"=>"title 1"],
+			["id"=>2,"title"=>"title 2"]
+		];
+		$this->response($data);
 	}
 
 	public function edit_get($id = NULL)

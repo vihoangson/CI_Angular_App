@@ -76,7 +76,6 @@
         </ul>
         </nav>
       </div>
-
       <div class="col-md-9 r-content">
         <div class="flexslider_">
           <div class="slides">
